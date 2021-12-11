@@ -1,0 +1,19 @@
+{
+    "name": "tyjiosen/minibot",
+    "description": "minibot sdk",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tyjiosen\\Minibot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tyjiosen",
+            "email": "4631458@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
