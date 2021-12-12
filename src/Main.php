@@ -3,7 +3,7 @@
 namespace Tyjiosen\Minibot;
 
 /**
- * 基于QQMini机器HTTPAPIv2插件
+ * 基于QQMini机器HTTPAPI插件
  */
 class Main
 {
@@ -20,7 +20,7 @@ class Main
 		/**
 		 * 所有请求方式都一致 就懒得在拆开了
 		 */
-		return  $this->getRes('/' . $name,$arguments[0]?$arguments[0]:[]);
+		return  $this->getRes('/' . $name,isset($arguments[0])?$arguments[0]:[]);
 		
 	}
 
@@ -50,7 +50,7 @@ class Main
 	{
 		if($key)
 		{
-			return $this->config[$key]?$this->config[$key]:'';
+			return isset($this->config[$key])?$this->config[$key]:'';
 		}
 
 		return $this->config;
