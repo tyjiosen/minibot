@@ -74,7 +74,7 @@ class Main
 			if(empty($header))
 			{
 				$header = [
-					'Content-type : application/json; charset=utf-8',
+					'Content-type: application/json; charset=utf-8',
 					'Content-Length:' . strlen($post_data)
 				];
 
